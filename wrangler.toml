@@ -1,0 +1,22 @@
+name = "school-homework-tracker"
+main = "worker/index.ts"
+compatibility_date = "2026-10-12"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "school-homework"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "RESOURCES"
+bucket_name = "school-homework-resources"
+
+[vars]
+APP_ORIGIN = "http://localhost:5173"

@@ -7,11 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy",
+    "d1:migrate:local": "wrangler d1 migrations apply school-homework --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply school-homework --remote"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.3",
     "lucide-react": "^0.468.0",
+    "hono": "^4.7.2",
+    "better-auth": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -24,6 +29,7 @@
     "tailwindcss": "3.4.16",
     "typescript": "^5.7.2",
     "vite": "^6.0.5",
-    "vitest": "2.1.8"
+    "vitest": "2.1.8",
+    "wrangler": "^4.5.0"
   }
 }
