@@ -1,0 +1,1 @@
+export default { content: ['./index.html', './src/**/*.{ts,tsx}'], darkMode: 'class', theme: { extend: { colors: { ink: '#17181c', mist: '#f5f6f8', violet: '#7568e8' }, boxShadow: { soft: '0 10px 35px rgba(25,28,40,.08)' } } }, plugins: [] };
